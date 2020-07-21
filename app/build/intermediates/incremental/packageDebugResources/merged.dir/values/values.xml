@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <string name="app_name">SemiCircleAnimation</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <declare-styleable name="SemiCircleAnimation">
+        <attr format="color" name="inner_circle_color"/>
+        <attr format="dimension" name="inner_circle_width"/>
+        <attr format="color" name="animated_circle_color"/>
+        <attr format="dimension" name="animated_circle_width"/>
+        <attr format="color" name="primary_circle_border_color"/>
+        <attr format="dimension" name="primary_circle_border_width"/>
+        <attr format="integer" name="anim_duration"/>
+
+        <attr format="enum" name="position">
+            <enum name="top_left" value="1"/>
+            <enum name="top_right" value="2"/>
+            <enum name="bottom_left" value="3"/>
+            <enum name="bottom_right" value="4"/>
+        </attr>
+
+
+    </declare-styleable>
+</resources>

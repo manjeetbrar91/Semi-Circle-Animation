@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+attr? anim_duration
+attr? animated_circle_color
+attr? animated_circle_width
+attr? inner_circle_color
+attr? inner_circle_width
+attr? position
+attr? primary_circle_border_color
+attr? primary_circle_border_width
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+drawable circel_bg
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id bottom_left
+id bottom_right
+id top_left
+id top_right
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style AppTheme
+styleable SemiCircleAnimation inner_circle_color inner_circle_width animated_circle_color animated_circle_width primary_circle_border_color primary_circle_border_width anim_duration position
