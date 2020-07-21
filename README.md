@@ -2,6 +2,9 @@
 Animate View Around Semi Circle on corner of fragment/activity
 
 Usage
+Gradle Build
+
+          implementation 'com.github.manjeetbrar91:Semi-Circle-Animation:1.0.1'
 
 In Layout XML File
 
