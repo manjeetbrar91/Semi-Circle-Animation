@@ -18,7 +18,7 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
 
-public class SemiCircularAnimate extends FrameLayout {
+public class SemiCircleAnimationView extends FrameLayout {
     private final int POSITION_TOP_LEFT = 1;
     private final int POSITION_TOP_RIGHT = 2;
     private final int POSITION_BOTTOM_LEFT = 3;
@@ -34,25 +34,25 @@ public class SemiCircularAnimate extends FrameLayout {
     private Context context;
     private int position = POSITION_TOP_RIGHT;
 
-    public SemiCircularAnimate(Context context) {
+    public SemiCircleAnimationView(Context context) {
         super(context);
         this.context = context;
 
     }
 
-    public SemiCircularAnimate(Context context, @Nullable AttributeSet attrs) {
+    public SemiCircleAnimationView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
         init(attrs);
     }
 
-    public SemiCircularAnimate(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public SemiCircleAnimationView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.context = context;
         init(attrs);
     }
 
-    public SemiCircularAnimate(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public SemiCircleAnimationView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         this.context = context;
         init(attrs);
