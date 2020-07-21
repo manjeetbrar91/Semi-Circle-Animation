@@ -24,6 +24,8 @@ Attributes
 3. primary_circle_border_width: outer circle border stroke width
 4. anim_duration : Animation duration in seconds
 5. animated_circle_width : Width of smallest circle which will animate.
+6. position = top_left, top_right, bottom_left, bottom_right
+
 
 
 
