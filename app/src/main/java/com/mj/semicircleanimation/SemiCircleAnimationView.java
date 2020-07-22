@@ -10,6 +10,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -77,6 +78,7 @@ public class SemiCircleAnimationView extends FrameLayout {
             strokeWidth = a.getDimension(R.styleable.SemiCircleAnimation_primary_circle_border_width, dpToPx(1));
             duration = a.getInt(R.styleable.SemiCircleAnimation_anim_duration, 2000);
             subViewWidth = (int) a.getDimension(R.styleable.SemiCircleAnimation_animated_circle_width, dpToPx(16));
+            subViewColor = a.getColor(R.styleable.SemiCircleAnimation_animated_circle_color, Color.argb(255, 152, 0, 1));
 
             position = a.getInt(R.styleable.SemiCircleAnimation_position, POSITION_TOP_RIGHT);
             circleBorderColor = a.getColor(R.styleable.SemiCircleAnimation_primary_circle_border_color, Color.BLACK);
@@ -247,10 +249,13 @@ public class SemiCircleAnimationView extends FrameLayout {
 
     View v;
     private int subViewWidth = 50;
+    private int subViewColor = Color.argb(255, 152, 0, 1);
 
 
     private void addSubView() {
         v = new View(context);
+        Drawable drawable = context.getResources().getDrawable(R.drawable.circel_bg);
+        drawable.setTint(subViewColor);
         v.setBackgroundResource(R.drawable.circel_bg);
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(subViewWidth, subViewWidth);
         v.setLayoutParams(params);

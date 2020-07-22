@@ -5,18 +5,22 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="084b6884-5480-4a9e-88dc-f259f1d652d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mj/semicircleanimation/SemiCircularAnimate.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mj/semicircleanimation/SemiCircleAnimationView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mj/semicircleanimation/SemiCircleAnimationView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mj/semicircleanimation/SemiCircleAnimationView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="SGS8WGRGIBGIW86P" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RZ8M7199JZV" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -126,6 +130,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="647" y="99" key="#app" timestamp="1595406948061">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="647" y="99" key="#app/0.0.1920.1040@0.0.1920.1040" timestamp="1595406948061" />
     <state width="1869" height="219" key="GridCell.Tab.0.bottom" timestamp="1595336472264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -146,9 +154,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="716" y="267" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595335470371" />
-    <state width="534" height="102" key="javadoc.popup.new" timestamp="1595334971159">
+    <state width="534" height="411" key="javadoc.popup.new" timestamp="1595406780750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="534" height="102" key="javadoc.popup.new/0.0.1920.1040@0.0.1920.1040" timestamp="1595334971159" />
+    <state width="534" height="411" key="javadoc.popup.new/0.0.1920.1040@0.0.1920.1040" timestamp="1595406780750" />
   </component>
 </project>
