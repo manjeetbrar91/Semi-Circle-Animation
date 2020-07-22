@@ -4,7 +4,7 @@ Animate View Around Semi Circle on corner of fragment/activity
 Usage
 Gradle Build
 
-          implementation 'com.github.manjeetbrar91:Semi-Circle-Animation:1.0.1'
+          implementation 'com.github.manjeetbrar91:Semi-Circle-Animation:1.0.3.2'
 
 In Layout XML File
 
