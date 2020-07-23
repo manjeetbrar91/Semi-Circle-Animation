@@ -9,6 +9,8 @@
         <attr name="primary_circle_border_color" format="color" />
         <attr name="primary_circle_border_width" format="dimension" />
         <attr name="anim_duration" format="integer" />
+        <attr name="anim_reverse" format="boolean" />
+        <attr name="anim_repeat" format="boolean" />
 
         <attr name="position" format="enum">
             <enum name="top_left" value="1" />

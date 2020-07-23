@@ -63,6 +63,8 @@ public class SemiCircleAnimationView extends FrameLayout {
     private float strokeWidth = 5f;
     private int circleBorderColor = Color.BLACK;
     private int innerCircleColor = Color.GREEN;
+    private boolean reverse = false;
+    private boolean repeat = false;
 
     public void setCircleBorderColor(int circleBorderColor) {
         this.circleBorderColor = circleBorderColor;
@@ -83,6 +85,8 @@ public class SemiCircleAnimationView extends FrameLayout {
             position = a.getInt(R.styleable.SemiCircleAnimation_position, POSITION_TOP_RIGHT);
             circleBorderColor = a.getColor(R.styleable.SemiCircleAnimation_primary_circle_border_color, Color.BLACK);
             innerCircleColor = a.getColor(R.styleable.SemiCircleAnimation_inner_circle_color, Color.BLACK);
+            reverse = a.getBoolean(R.styleable.SemiCircleAnimation_anim_reverse, false);
+            repeat = a.getBoolean(R.styleable.SemiCircleAnimation_anim_repeat, false);
             return true;
         } catch (Exception e) {
             return false;
@@ -209,12 +213,21 @@ public class SemiCircleAnimationView extends FrameLayout {
     int startAngle() {
         switch (position) {
             case POSITION_TOP_LEFT: {
+                if (reverse) {
+                    return 90;
+                }
                 return 0;
             }
             case POSITION_TOP_RIGHT: {
+                if (reverse) {
+                    return 90;
+                }
                 return 180;
             }
             case POSITION_BOTTOM_LEFT: {
+                if (reverse) {
+                    return 360;
+                }
                 return 270;
 
             }
@@ -229,12 +242,21 @@ public class SemiCircleAnimationView extends FrameLayout {
     int endAngle() {
         switch (position) {
             case POSITION_TOP_LEFT: {
+                if (reverse) {
+                    return -90;
+                }
                 return 90;
             }
             case POSITION_TOP_RIGHT: {
+                if (reverse) {
+                    return 90;
+                }
                 return -90;
             }
             case POSITION_BOTTOM_LEFT: {
+                if (reverse) {
+                    return -90;
+                }
                 return 90;
 
             }
@@ -282,7 +304,7 @@ public class SemiCircleAnimationView extends FrameLayout {
                 animator = ObjectAnimator.ofFloat(v, View.X, View.Y, path); //at first parameter (view) put the target view
                 animator.setDuration(duration);
                 animator.setRepeatCount(9999999);
-
+//animator.setRepeatMode(ValueAnimator.RESTART);
                 animator.addListener(new AnimatorListenerAdapter() {
                     @Override
                     public void onAnimationEnd(Animator animation) {
