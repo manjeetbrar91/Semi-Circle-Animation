@@ -304,6 +304,9 @@ public class SemiCircleAnimationView extends FrameLayout {
                 animator = ObjectAnimator.ofFloat(v, View.X, View.Y, path); //at first parameter (view) put the target view
                 animator.setDuration(duration);
                 animator.setRepeatCount(9999999);
+                if (repeat) {
+                    animator.setRepeatMode(ValueAnimator.REVERSE);
+                }
 //animator.setRepeatMode(ValueAnimator.RESTART);
                 animator.addListener(new AnimatorListenerAdapter() {
                     @Override

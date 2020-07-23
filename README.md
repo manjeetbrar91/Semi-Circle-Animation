@@ -29,6 +29,7 @@ Attributes
 4. anim_duration : Animation duration in seconds
 5. animated_circle_width : Width of smallest circle which will animate.
 6. position = top_left, top_right, bottom_left, bottom_right
+7. reverse = true : Bottom to Top Animation, false :  Top to Bottom Animation
 
 
 
